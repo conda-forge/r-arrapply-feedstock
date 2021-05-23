@@ -48,7 +48,7 @@ test:
 
 about:
   home: https://CRAN.R-project.org/package=arrApply
-  license: GPL-2
+  license: GPL-2.0-or-later
   summary: 'High performance variant of apply() for a fixed set of functions. Considerable speedup
     is a trade-off for universality, user defined functions cannot be used with this
     package. However, 21 most currently employed functions are available for usage.
@@ -61,7 +61,8 @@ about:
     as named arguments in ''...''.'
   license_family: GPL2
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
+
 extra:
   recipe-maintainers:
     - conda-forge/r
